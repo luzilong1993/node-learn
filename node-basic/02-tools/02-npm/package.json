@@ -1,0 +1,21 @@
+{
+  "name": "02-npm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "runjs": "node ./03-scripts/scripts1.js && node ./03-scripts/scripts2.js",
+    "start": "node ./03-scripts/script.js",
+    "build": "echo $npm_package_config_env"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "config":{
+    "env":"production"
+  }
+}
