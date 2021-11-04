@@ -9,3 +9,14 @@
 - ~ 表示锁定主版本号和次版本号
 - 空:就是要当前版本，不用升级至最新版本
 - * 表示其最新版本
+
+# node的浏览器端调试
+
+- node --inspect --inspect-brk server.js
+
+# node的进程管理工具
+
+- supervisor
+- nodemon
+- forever
+- pm2

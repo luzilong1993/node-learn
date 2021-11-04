@@ -1,0 +1,9 @@
+[2021-11-04T15:26:38.131] [DEBUG] cheese - [Object: null prototype] { x: '3', y: '4' }
+[2021-11-04T15:27:46.799] [DEBUG] cheese - [Object: null prototype] { x: '3', y: '4' }
+[2021-11-04T15:27:46.803] [DEBUG] cheese - URLSearchParams { 'x' => '3', 'y' => '4' }
+[2021-11-04T15:33:16.700] [DEBUG] cheese - [Object: null prototype] { x: '3', y: '4' }
+[2021-11-04T15:33:16.704] [DEBUG] cheese - URLSearchParams { 'x' => '3', 'y' => '4' }
+[2021-11-04T15:34:16.343] [DEBUG] cheese - [Object: null prototype] { x: '3', y: '4' }
+[2021-11-04T15:34:16.347] [DEBUG] cheese - URLSearchParams { 'x' => '3', 'y' => '4' }
+[2021-11-04T15:34:25.565] [DEBUG] cheese - [Object: null prototype] { x: '3', y: '4' }
+[2021-11-04T15:34:25.567] [DEBUG] cheese - URLSearchParams { 'x' => '3', 'y' => '4' }
