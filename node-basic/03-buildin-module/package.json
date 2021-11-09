@@ -11,6 +11,8 @@
   "devDependencies": {
     "log4js": "^6.3.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "http-proxy-middleware": "^2.0.1"
+  },
   "description": ""
 }
