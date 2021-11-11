@@ -20,3 +20,7 @@
 - nodemon
 - forever
 - pm2
+
+# yarn 源
+
+[yarn源配置问题]https://zhuanlan.zhihu.com/p/35856841
