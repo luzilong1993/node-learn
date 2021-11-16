@@ -24,3 +24,15 @@
 # yarn 源
 
 [yarn源配置问题]https://zhuanlan.zhihu.com/p/35856841
+
+# express template(模版引擎)
+
+- ejs
+- pug
+- jade
+- art-template
+
+# 页面render
+
+- ssr (服务端渲染)
+- csr (客户端渲染)
