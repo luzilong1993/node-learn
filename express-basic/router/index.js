@@ -5,6 +5,8 @@ const router = express.Router();
 
 router.get('/', list)
 
+router.get('/api/list',list)
+
 // 获取数据
 router.get('/index', (req, res) => {
     const query = req.query;
