@@ -1,19 +1,15 @@
 一、数据库操作
 db //查询当前数据库
-
 show dbs //查询所有的数据库
-
 use music   //创建/切换数据库 music数据库名字  
 db.stats()   //查看数据库状态
 db.version() // 查看数据库版本
-
 db.getMongo() //查看当前数据库连接地址
 db.dropDatabase()  //删除数据库
 
 二、集合操作
 
 db.createCollection('collectionName') // 创建一个集合
-
 db.getCollectionNames()  //得到当前db所有的集合
 
 
