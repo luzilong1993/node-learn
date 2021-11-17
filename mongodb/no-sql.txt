@@ -1,0 +1,58 @@
+一、数据库操作
+db //查询当前数据库
+
+show dbs //查询所有的数据库
+
+use music   //创建/切换数据库 music数据库名字  
+db.stats()   //查看数据库状态
+db.version() // 查看数据库版本
+
+db.getMongo() //查看当前数据库连接地址
+db.dropDatabase()  //删除数据库
+
+二、集合操作
+
+db.createCollection('collectionName') // 创建一个集合
+
+db.getCollectionNames()  //得到当前db所有的集合
+
+
+三、文档操作
+
+插入数据
+db.zhoujielun.insert([{name: 'm1',release: '2020-12-05'}])
+db.zhoujielun.insert([{name: 'm2',release: '2020-12-05'},{name:"m2",release:'2020-12-05'}])
+db.zhoujielun.save([{name: 'm3',release: '2020-12-05'},{name:"m4",release:'2020-12-05'}])
+db.zhoujielun.insert([{name: 'm1',release: '2020-12-05',publishNum:100}])
+
+修改数据
+db.zhoujielun.update({name:"m1"},{$set:{release:"21221-2929-2929"}})
+db.zhoujielun.update({name: 'm100'},{$inc: {publishNum: 200}},true) //找不到就创建
+db.zhoujielun.update({name: 'm1'},{$inc: {publishNum: 200}},true,true) //多个匹配
+
+删除数据
+db.zhoujielun.remove({name:"m100"})
+
+查询数据
+db.zhoujielun.find()  //查询所有的结果
+db.zhoujielun.distinct('name') //查询去重后到结果
+db.zhoujielun.find({release:"2020-12-05"}) //条件查询release=2020-12-05
+db.zhoujielun.find({publishNum:{$gt:200}})  //大于200的publishNum
+db.zhoujielun.find({publishNum:{$lt:200}})  //小于200的publishNum
+db.zhoujielun.find({publishNum:{$gte:200}})  //大于等于200的publishNum
+db.zhoujielun.find({publishNum:{$lte:200}})  //小于等于200的publishNum
+db.zhoujielun.find({publishNum:{$gte:200,$lte: 300}})  //大于等于200小于等于300的publishNum
+db.zhoujielun.find({name:})  //大于等于200小于等于300的publishNum
+db.zhoujielun.find({name: /1$/})  //正则查询
+db.zhoujielun.find({},{_id:0 ,publishNum:0})  //过滤掉其中的_id和publishNum数据
+db.zhoujielun.find({name: /1$/},{_id:0 ,publishNum:0})
+db.zhoujielun.find().sort({release:1})   //升序排列
+db.zhoujielun.find().sort({release:-1})   //降序排列
+db.zhoujielun.find().limit(3)  //只要前三条
+db.zhoujielun.find().limit(3).skip(3)   //跳过三条取三条
+注意：sort无论在什么位置，都是先排序再查找
+
+db.zhoujielun.find({$or:[{name:"m2"},{name:"m1"}]})
+db.zhoujielun.findOne()   //只找一条记录
+db.zhoujielun.find().count()  //查询个数
+
